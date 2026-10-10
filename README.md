@@ -20,3 +20,15 @@ Upload index.html, css/, js/, images/ and the PDF to any static web host.
 Toyota Connected India is the first featured project and experience entry. Its responsibilities include car connectivity, vehicle onboarding, dashboard management and UI/UX improvements.
 
 The contact form opens a draft in the visitor's email app; it does not send mail automatically. The downloaded resume is an earlier version, labeled accordingly. Exact employment dates and the current formal job title still need confirmation.
+
+## Industry backgrounds
+Project cards use illustrative industry imagery at opacity: 0.10 (90% transparent), behind fully opaque original text. Six panels in images/industry-backgrounds.png are mapped using data-industry attributes and CSS background positions. These are illustrations, not actual product screenshots.
+
+## Scroll counters
+Achievement percentages count from zero when each becomes visible, once per page load. Durations differ (1.8, 2.6, 1.4 and 2.2 seconds); reduced-motion preference displays final values without animation. Edit dist/js/counters.js (or js/counters.js in the ZIP).
+
+## Elastic ID badge
+Hold and pull the card with mouse or touch; its lanyard stretches and the badge springs back when released. Click or press Enter/Space to flip. Reduced-motion preference snaps it back without bounce. Implementation: js/badge.js.
+
+## Toolkit phone
+Toolkit icons open an app screen within the illustrated phone, with Back/Home controls and keyboard Escape support. The phone clock follows the visitor device local time and refreshes each minute and when the tab regains focus. Implementation: js/toolkit-phone.js.
