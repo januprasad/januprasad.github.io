@@ -1,0 +1,12 @@
+.avatar-is-pinned>.janu-avatar{visibility:hidden}
+.avatar-companion{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));width:145px;height:min(220px,35dvh);z-index:45;pointer-events:none;isolation:isolate}
+.avatar-companion>.janu-avatar{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;object-position:center bottom;transform-origin:top left;filter:drop-shadow(0 9px 8px #18272025)}
+.avatar-speech{position:absolute;bottom:72%;right:100%;width:215px;padding:17px 19px;border:1px solid #fff;border-radius:23px 23px 7px 23px;background:linear-gradient(145deg,#fff 15%,#f5f2e9 70%,#dedbcd);box-shadow:inset 0 3px 1px #fff,0 6px 0 #d2d3c6,0 15px 25px #233b3120;color:#233b31;pointer-events:auto}
+.avatar-speech::after{content:'';position:absolute;right:-10px;bottom:12px;width:17px;height:17px;background:#eeece1;transform:skewY(35deg);border-radius:0 5px 4px 0;z-index:-1;box-shadow:2px 4px 0 #d2d3c6}
+.avatar-speech-label{font:700 8px/1.4 Arial,sans-serif;letter-spacing:.15em;color:#7b866f}
+.avatar-speech p{font-size:18px;line-height:1.2;font-weight:650;letter-spacing:-.4px;margin:7px 0}
+.avatar-speech-detail{display:block;font-size:11px;line-height:1.5;color:#59665d}
+.avatar-bubble-toggle{pointer-events:auto;position:absolute;right:0;top:0;border:1px solid #c8cebc;border-radius:50%;width:34px;height:34px;background:#f5f2e9;color:#294337;font-size:23px;line-height:1;box-shadow:0 4px 0 #cbd1c3;cursor:pointer;z-index:2}
+@media(max-width:760px){.avatar-companion{width:90px;height:min(140px,25dvh);right:8px;bottom:max(8px,env(safe-area-inset-bottom))}.avatar-speech{width:174px;right:88%;bottom:60%;padding:12px 14px;border-radius:18px 18px 6px 18px}.avatar-speech p{font-size:15px}.avatar-speech-detail{font-size:10px}.avatar-bubble-toggle{width:30px;height:30px;right:-2px;top:4px}}
+@media(max-height:420px){.avatar-companion{height:110px;width:75px}.avatar-speech{bottom:30%;padding:10px 13px}}
+@media print{.avatar-companion{display:none!important}.avatar-is-pinned>.janu-avatar{visibility:visible}}
